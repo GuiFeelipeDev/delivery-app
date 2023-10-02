@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Poppins:wght@400;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pattern_bg_light{
+  background-color: #F9E0BB;
+  background-image: url("/Pattern.png");
+  background-position: center;
+}
+
+.pattern_bg_medium{
+  background-color: #FFC26F;
+  background-image: url("/Pattern.png");
+  background-position: center;
+}
+
+.card_gradient{
+  background: linear-gradient(transparent, #FFC26F,#FFC26F, #FFC26F, #FFC26F, #FFC26F);
+}
+
+.card_button{
+  background-color: #884A39;
+  color: white;
+  width: 80px;
+  box-shadow: 2px 8px 10px -8px rgba(0,0,0,0.75);
+}
