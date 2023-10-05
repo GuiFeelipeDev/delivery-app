@@ -1,9 +1,15 @@
+"use client"
+
 import Image from "next/image"
-import React from "react"
+import React, { useState } from "react"
+import CardModal from "./CardModal"
 
 const ProductCard = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
   return (
     <div className="w-[160px] h-[240px] md:scale-110 mt-4 bg-medium-brown rounded-[20px] shadow-xl overflow-hidden flex flex-col font-jolly">
+      <CardModal open={isOpen} setOpen={setIsOpen} />
       <Image
         src="/burger.jpg"
         width={160}
@@ -20,7 +26,8 @@ const ProductCard = () => {
         </h2>
         <button
           type="button"
-          className="card_button text-2xl rounded-full hover:scale-110"
+          className="card_button text-2xl rounded-full hover:scale-110 px-[10px]"
+          onClick={() => setIsOpen(true)}
         >
           Já Quero!
         </button>

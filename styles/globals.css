@@ -32,6 +32,9 @@
 .card_button{
   background-color: #884A39;
   color: white;
-  width: 80px;
+  box-shadow: 2px 8px 10px -8px rgba(0,0,0,0.75);
+}
+
+.default_shadow{
   box-shadow: 2px 8px 10px -8px rgba(0,0,0,0.75);
 }
