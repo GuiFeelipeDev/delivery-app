@@ -29,6 +29,10 @@
   background: linear-gradient(transparent, #FFC26F,#FFC26F, #FFC26F, #FFC26F, #FFC26F);
 }
 
+.cart_gradient{
+  background: linear-gradient(90deg, transparent, #F9E0BB);
+}
+
 .card_button{
   background-color: #884A39;
   color: white;

@@ -39,6 +39,12 @@ export default function CardModal({ open, setOpen }: openState) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="pattern_bg_medium w-full max-w-md transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all flex flex-col items-center">
+                  <span
+                    className="absolute right-7 top-4 font-jolly text-3xl text-dark-red hover:scale-110 cursor-pointer"
+                    onClick={() => setOpen(false)}
+                  >
+                    X
+                  </span>
                   <Image
                     src={"/burger.jpg"}
                     alt="Hamburger delicioso hummm"

@@ -1,3 +1,4 @@
+import Drawer from "@/components/Drawer"
 import NavBar from "@/components/NavBar"
 import "@/styles/globals.css"
 
@@ -6,12 +7,12 @@ export const metadata = {
   description: "Seu pedido descomplicado!",
 }
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <Drawer>{children}</Drawer>
     </html>
   )
 }
 
-export default RootLayout
+export default Layout

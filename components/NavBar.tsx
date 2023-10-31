@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import Image from "next/image"
 import { BsCart3 } from "react-icons/bs"
 const NavBar = () => {
@@ -8,17 +9,28 @@ const NavBar = () => {
     >
       <div className="w-[90%] min-w-[340px] flex justify-between items-center">
         <div className="flex cursor-pointer">
-          <Image src="/logo.png" alt="FastBurger Logo" width={70} height={70} />
-          <div className="main_font flex flex-col leading-none items-center]">
+          <Link href="/cardapio">
             <Image
-              src="/logo-text.svg"
-              alt="Fast Burger Delivery"
-              width={90}
-              height={90}
+              src="/logo.png"
+              alt="FastBurger Logo"
+              width={70}
+              height={70}
             />
-          </div>
+          </Link>
+          <Link href="/cardapio">
+            <div className="main_font flex flex-col leading-none items-center]">
+              <Image
+                src="/logo-text.svg"
+                alt="Fast Burger Delivery"
+                width={90}
+                height={90}
+              />
+            </div>
+          </Link>
         </div>
-        <BsCart3 className={`text-4xl text-medium-brown cursor-pointer`} />
+        <Link href={"/cardapio/carrinho"}>
+          <BsCart3 className={`text-4xl text-medium-brown cursor-pointer`} />
+        </Link>
       </div>
     </section>
   )
